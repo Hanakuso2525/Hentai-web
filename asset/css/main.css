@@ -5,6 +5,8 @@ body {
 .side {
   text-align:center;
   margin-left:10px;
+  width: 260px;
+  box-sizing: border-box;
 } 
 
 .content {
