@@ -2,6 +2,25 @@ body {
   background-color: #ffb0bd;
 }
 
+.side {
+  background-color:#ff838b;
+  width:100px;
+  height:300px;
+  text-align:center;
+  margin-left:10px;
+} 
+
+.content {
+  background-color:#b3d874;
+  width:250px;
+  height:300px;
+  text-align:center;
+}
+
+article {
+  display:flex;
+}
+
 .title {
   padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
   color: #494949;/*文字色*/
