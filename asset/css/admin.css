@@ -1,1 +1,13 @@
+.card-body {
+    padding: 40px 40px 40px 30px !important;
+}
 
+.card-body {
+    text-align: left !important;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
