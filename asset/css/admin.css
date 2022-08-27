@@ -1,56 +1,67 @@
-.flip-card_04 {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  border: 0px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-.flip-card_name {
-  font-weight:bold;
-  font-size:2.0rem;
-}
-
-.flip-card-inner_04 {
+.profile-card{
+  width: 100%;
+  max-width:300px;
   position: relative;
-  width: 100%;
-  height: 100%;
+  background: #fff; /*背景の色*/
+  box-shadow: 0px 1px 3px rgba(0,0,0,.18);
+  overflow: hidden;
+}
+
+.profile-card:before{
+ width:120%;
+ height:100px;
+ content:"";
+ transform:skew(15deg,10deg);
+ background: #70b7ff; /*斜め背景の色*/
+ position:  absolute;
+ top:-15%;
+ left:-10%;
+ z-index: 0;
+}
+
+.profile-card__inner{
+ position: relative;
+}
+
+.profile-thumb{
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+    border: #fff 3px solid;
+    border-radius: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.profile-thumb img{
+  display: block;
+    width: 100%;
+    height: auto;
+}
+
+.profile-content{
+  padding: 15px;
+}
+
+.profile-content span{
+  display: block;
+}
+
+.profile-name{
+  margin-bottom: 3px;
+  font-weight: bold;
   text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
 }
 
-.flip-card_04:hover .flip-card-inner_04 {
-  transform: rotateY(180deg);
+.profile-job{
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 10px;
+  text-align: center;
 }
 
-.flip-card-front_04, .flip-card-back_04 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-.flip-card-front_04 {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back_04 {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-/* 反転した時の囲み枠 */
-.cardbox1 {
-    padding: 2.0em 1em;
-    margin: 1em 2em;
-    font-weight: bold;
-    border: solid 3px #FFFFFF;
-}
-.cardbox1 p {
-    margin: 0; 
-    padding: 0;
+.profile-intro{
+  font-size: 12px;
 }
